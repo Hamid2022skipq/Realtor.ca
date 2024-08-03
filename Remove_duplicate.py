@@ -5,11 +5,12 @@ def remove_duplicate_row(file): # work perfectly
     df = pd.read_csv(file)
     df = df.dropna(how='all')
     sd=df.sort_values(by="CITY")
-    dc = sd.drop_duplicates(subset=df.columns.difference(['DATE','LATITUDE','LONGITUDE']), inplace=False)
+    dc = sd.drop_duplicates(subset=df.columns.difference(['DATE','LATITUDE','LONGITUDE', 'TIME']), inplace=False)
     dc.to_csv(file, index=False)
     print ("Duplicates removed from the CSV file.")
 
-file_path = r"C:\Users\Hamid Ali\Desktop\WebScraping\REALTOR_T.csv" 
+file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_W.csv" 
+
 remove_duplicate_row(file_path)
 
 def remove_duplicate_rows(Old_file, New_file): # work perfectly
@@ -40,7 +41,7 @@ def remove_duplicate_rows(Old_file, New_file): # work perfectly
 
 
 Old_file = r"C:\Users\Hamid Ali\Desktop\WebScraping\Master Files\Master_Toronto.csv"
-New_file = r"C:\Users\Hamid Ali\Desktop\WebScraping\REALTOR_T.csv"
+New_file = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_T.csv"
 
 # Remove duplicate rows from the second CSV file
 # remove_duplicate_rows(Old_file, New_file)

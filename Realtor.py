@@ -110,7 +110,7 @@ def main(url, i=None):
 
 if __name__ == "__main__":
 
-    for i in range(1,51):
+    for i in range(40,51):
 
         url=f'https://www.realtor.ca/map#view=list&CurrentPage={i}&Sort=6-D&GeoIds=g30_dpz89rm7&GeoName=Toronto%2C%20ON&PropertyTypeGroupID=1&TransactionTypeId=2&PropertySearchTypeId=1&Currency=CAD&HiddenListingIds=&IncludeHiddenListings=false'
         # &PriceMin=1300000&PriceMax=1500000 T
