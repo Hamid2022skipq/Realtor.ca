@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
     for i in range(40,51):
 
-        url=f'https://www.realtor.ca/map#view=list&CurrentPage={i}&Sort=6-D&GeoIds=g30_dpz89rm7&GeoName=Toronto%2C%20ON&PropertyTypeGroupID=1&TransactionTypeId=2&PropertySearchTypeId=1&Currency=CAD&HiddenListingIds=&IncludeHiddenListings=false'
+        url=f'URL'
         # &PriceMin=1300000&PriceMax=1500000 T
         # PriceMin=1300000&PriceMax=2500000 M
         print("\n" + f"Accessing url : {url}" + "\n")
