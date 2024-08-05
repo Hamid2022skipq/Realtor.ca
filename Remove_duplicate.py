@@ -7,9 +7,9 @@ def remove_duplicate_row(file): # work perfectly
     sd=df.sort_values(by="CITY")
     dc = sd.drop_duplicates(subset=df.columns.difference(['DATE','LATITUDE','LONGITUDE', 'TIME']), inplace=False)
     dc.to_csv(file, index=False)
-    print ("Duplicates removed from the CSV file.")
+    print("Duplicates removed from the CSV file.")
 
-file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_W.csv" 
+file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_T.csv" 
 
 remove_duplicate_row(file_path)
 
