@@ -9,7 +9,7 @@ def remove_duplicate_row(file): # work perfectly
     dc.to_csv(file, index=False)
     print("Duplicates removed from the CSV file.")
 
-file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_T.csv" 
+file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_W.csv" 
 
 remove_duplicate_row(file_path)
 

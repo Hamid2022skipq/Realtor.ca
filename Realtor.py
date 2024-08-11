@@ -10,7 +10,7 @@ options.add_experimental_option("useAutomationExtension", False)
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 driver = webdriver.Chrome(options=options)
 driver.maximize_window()
-file_name = "REALTOR_T.csv"
+file_name = "REALTOR_W.csv"
 def main(url, i=None):
     driver.get(url)
     time.sleep(1)
@@ -110,10 +110,10 @@ def main(url, i=None):
 
 if __name__ == "__main__":
 
-    for i in range(35,51):
+    for i in range(1,51):
 
-        url=f'https://www.realtor.ca/map#view=list&CurrentPage={i}&Sort=6-A&GeoIds=g30_dpz89rm7&GeoName=Toronto%2C%20ON&PropertyTypeGroupID=1&TransactionTypeId=2&PropertySearchTypeId=1&Currency=CAD&HiddenListingIds=&IncludeHiddenListings=false'
-        # &PriceMin=1300000&PriceMax=1500000 T
+        url=f'https://www.realtor.ca/map#view=list&CurrentPage={i}&Sort=6-D&GeoIds=g30_dpxrgruz&GeoName=Mississauga%2C%20ON&PropertyTypeGroupID=1&TransactionTypeId=2&PropertySearchTypeId=1&Currency=CAD&HiddenListingIds=&IncludeHiddenListings=false'
+        # &PriceMin=1500000&PriceMax=1900000 T
         # PriceMin=1300000&PriceMax=2500000 M
         print("\n" + f"Accessing url : {url}" + "\n")
         main(url,i)
