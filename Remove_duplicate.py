@@ -9,7 +9,7 @@ def remove_duplicate_row(file): # work perfectly
     dc.to_csv(file, index=False)
     print("Duplicates removed from the CSV file.")
 
-file_path = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_T.csv" 
+file_path = r"file_path.csv" 
 
 remove_duplicate_row(file_path)
 
@@ -40,8 +40,8 @@ def remove_duplicate_rows(Old_file, New_file): # work perfectly
     df2.to_csv(New_file, index=False)
 
 
-Old_file = r"C:\Users\Hamid Ali\Desktop\WebScraping\Master Files\Master_Toronto.csv"
-New_file = r"C:\Users\Hamid Ali\Desktop\Realtor.ca-scraping\REALTOR_T.csv"
+Old_file = r"file1_path.csv"
+New_file = r"file2_path.csv"
 
 # Remove duplicate rows from the second CSV file
 # remove_duplicate_rows(Old_file, New_file)
